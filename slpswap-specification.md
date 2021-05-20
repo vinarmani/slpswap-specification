@@ -160,7 +160,7 @@ AFTER SWAP:</br>
 
 ### MIME Types
 
-The MIME (RFC 2046) Media Types follow the basic specification described in [Simple Ledger Payment Protocol](https://github.com/simpleledger/slp-specifications/blob/master/slp-payment-protocol.md) with the following modifications.
+The MIME (RFC 2046) Media Types follow the basic specification described in [Simple Ledger Payment Protocol](https://github.com/simpleledger/slp-specifications/blob/master/slp-payment-protocol.md) with the following modifications:
 
 | Message  | Type/Subtype                                  |
 | ------------ | ------------------------------------------|
@@ -185,7 +185,7 @@ A wallet client generating a Payment message would precede the binary message da
 | 400 | Could not parse OP_RETURN output | SLP OP_RETURN output is malformed |
 | 400 | Unsupported SLP token | The SLP token in the transaction is not among the supported tokens |
 | 400 | Insufficient tokens paid | The amount paid is insufficient to cover postage and swap |
-| 400 | Tokens currently unavailable | The Swap server has insufficient token UTXOs available to sell. Please inform support |
+| 400 | Tokens currently unavailable | The swap server has insufficient token UTXOs available to sell. Please inform support |
 | 500 | Error | An error has occurred on the swap server |
 
 
