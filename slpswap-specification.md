@@ -153,8 +153,8 @@ AFTER SWAP:</br>
 
 | INDEX | INPUT | OUTPUT |
 | ------------ | ------------ | ------------------------------------------|
-| 0 | **(223,359 HONK tokens)** 546 satoshis  | **SLP OP_RETURN** |
-| 1 | 546 satoshis  *dust (to chain)* | To Sender **(103,359 HONK tokens minus stamp fee)** 546 satoshis |
+| 0 | **(193,828 HONK tokens)** 546 satoshis  | **SLP OP_RETURN** |
+| 1 | 546 satoshis  *dust (to chain)* | To Sender **(73,828 HONK tokens minus stamp fee)** 546 satoshis |
 | 2 | 1148 satoshis *stamp* | To Swap Server **(120,000 HONK tokens plus stamp fee)** 546 satoshis  *change* |
 
 
