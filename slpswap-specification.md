@@ -149,7 +149,7 @@ AFTER SWAP:</br>
 | ------------ | ------------ | ------------------------------------------|
 | 0 | **(70 SPICE tokens)** 546 satoshis  | **SLP OP_RETURN** |
 | 1 | 1148 satoshis *stamp* | To Swap Server **(50 SPICE tokens)** 546 satoshis |
-| 2 | | To Sender **(20 SPICE tokens)** 546 satoshis  *change* |
+| 2 | 1148 satoshis *stamp* | To Sender **(20 SPICE tokens)** 546 satoshis  *change* |
 | 3 | | To Swap Server 546 satoshis  *dust (to chain)* |
 
 | INDEX | INPUT | OUTPUT |
