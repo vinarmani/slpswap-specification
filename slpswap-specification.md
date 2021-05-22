@@ -123,9 +123,10 @@ Payments are generated according to the Payment Generation section of the [Simpl
 1. Both valid Simple Ledger Protocol and native (BCH) inputs and outputs may be included.
 2. The sum of all valid SLP outputs directed to the `address` specified in the [Exchange Rate Request](#exchange-rate-request) response will constitute the value of the tokens being 'sold' to the SLP swap server.
 3. At least one native (BCH) output must be directed to the `address` specified in the [Exchange Rate Request](#exchange-rate-request) response. This constitutes "dust" that will be used in the chained transaction which returns the "purchased" SLP token value to the original sender.
-3. All inputs must use the SIGHASH_ALL | SIGHASH_ANYONECANPAY signature hash type. This is to mitigate any potential risk of malleation of outputs.
-4. Sender broadcasts transaction to standard Postage endpoint of SLP Swap server, but uses the [MIME types specified in this document](#mime-types).
-5. The SLP Swap server will broadcast the chained transactions to the network once the payment transaction has been validated and the corresponding swap transaction has been created using the dust, as specified in #3, as one of the inputs.
+4. All inputs in the sender transaction must use the SIGHASH_ALL | SIGHASH_ANYONECANPAY signature hash type. This is to mitigate any potential risk of malleation of outputs.
+5. All inputs in the chained transaction (tokens returned to the original sender) must use the standard SIGHASH_ALL signature hash type.
+6. Sender broadcasts transaction to standard Postage endpoint of SLP Swap server, but uses the [MIME types specified in this document](#mime-types).
+7. The SLP Swap server will broadcast the chained transactions to the network once the payment transaction has been validated and the corresponding swap transaction has been created using the dust, as specified in #3, as one of the inputs.
 
 ### Payment Validation
 
